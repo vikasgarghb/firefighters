@@ -1,17 +1,17 @@
-package main.scenarios;
+package com.vgarg.scenarios;
 
 import java.util.List;
 
 import org.junit.Assert;
 import org.junit.Test;
 
-import main.api.City;
-import main.api.CityNode;
-import main.api.FireDispatch;
-import main.api.Firefighter;
-import main.api.Pyromaniac;
-import main.api.exceptions.FireproofBuildingException;
-import main.impls.CityImpl;
+import com.vgarg.api.City;
+import com.vgarg.api.CityNode;
+import com.vgarg.api.FireDispatch;
+import com.vgarg.api.Firefighter;
+import com.vgarg.api.Pyromaniac;
+import com.vgarg.api.exceptions.FireproofBuildingException;
+import com.vgarg.impls.CityImpl;
 
 public class BasicScenarios {
   @Test
@@ -23,7 +23,7 @@ public class BasicScenarios {
     Pyromaniac.setFire(basicCity, fireNode);
 
     fireDispatch.setFirefighters(1);
-    fireDispatch.dispatchFirefighers(fireNode);
+    fireDispatch.dispatchFirefighters(fireNode);
     Assert.assertFalse(basicCity.getBuilding(fireNode).isBurning());
   }
 
@@ -37,7 +37,7 @@ public class BasicScenarios {
     Pyromaniac.setFire(basicCity, fireNode);
 
     fireDispatch.setFirefighters(1);
-    fireDispatch.dispatchFirefighers(fireNode);
+    fireDispatch.dispatchFirefighters(fireNode);
 
     Firefighter firefighter = fireDispatch.getFirefighters().get(0);
     Assert.assertEquals(2, firefighter.distanceTraveled());
@@ -54,7 +54,7 @@ public class BasicScenarios {
     Pyromaniac.setFire(basicCity, fireNode);
 
     fireDispatch.setFirefighters(1);
-    fireDispatch.dispatchFirefighers(fireNode);
+    fireDispatch.dispatchFirefighters(fireNode);
 
     Firefighter firefighter = fireDispatch.getFirefighters().get(0);
     Assert.assertEquals(1, firefighter.distanceTraveled());
@@ -73,7 +73,7 @@ public class BasicScenarios {
     Pyromaniac.setFires(basicCity, fireNodes);
 
     fireDispatch.setFirefighters(1);
-    fireDispatch.dispatchFirefighers(fireNodes);
+    fireDispatch.dispatchFirefighters(fireNodes);
 
     Firefighter firefighter = fireDispatch.getFirefighters().get(0);
     Assert.assertEquals(2, firefighter.distanceTraveled());
@@ -94,7 +94,7 @@ public class BasicScenarios {
     Pyromaniac.setFires(basicCity, fireNodes);
 
     fireDispatch.setFirefighters(2);
-    fireDispatch.dispatchFirefighers(fireNodes);
+    fireDispatch.dispatchFirefighters(fireNodes);
 
     List<Firefighter> firefighters = fireDispatch.getFirefighters();
     int totalDistanceTraveled = 0;

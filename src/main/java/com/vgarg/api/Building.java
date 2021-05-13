@@ -1,7 +1,7 @@
-package main.api;
+package com.vgarg.api;
 
-import main.api.exceptions.FireproofBuildingException;
-import main.api.exceptions.NoFireFoundException;
+import com.vgarg.api.exceptions.FireproofBuildingException;
+import com.vgarg.api.exceptions.NoFireFoundException;
 
 public interface Building {
   /**

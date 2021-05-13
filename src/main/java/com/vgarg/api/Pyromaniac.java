@@ -1,8 +1,8 @@
-package main.api;
+package com.vgarg.api;
 
 import java.util.List;
 
-import main.api.exceptions.FireproofBuildingException;
+import com.vgarg.api.exceptions.FireproofBuildingException;
 
 /**
  * Utility class to set fires in a city

@@ -1,4 +1,4 @@
-package main.api;
+package com.vgarg.api;
 
 import java.util.Objects;
 

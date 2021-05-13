@@ -1,9 +1,9 @@
-package main.impls;
+package com.vgarg.impls;
 
-import main.api.Building;
-import main.api.CityNode;
-import main.api.exceptions.FireproofBuildingException;
-import main.api.exceptions.NoFireFoundException;
+import com.vgarg.api.Building;
+import com.vgarg.api.CityNode;
+import com.vgarg.api.exceptions.FireproofBuildingException;
+import com.vgarg.api.exceptions.NoFireFoundException;
 
 public class BuildingImpl implements Building {
   private final CityNode location;

@@ -1,6 +1,6 @@
-package main.api;
+package com.vgarg.api;
 
-import main.api.exceptions.OutOfCityBoundsException;
+import com.vgarg.api.exceptions.OutOfCityBoundsException;
 
 public interface City {
 

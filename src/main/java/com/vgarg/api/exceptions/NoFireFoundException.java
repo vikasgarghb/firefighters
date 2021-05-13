@@ -1,4 +1,4 @@
-package main.api.exceptions;
+package com.vgarg.api.exceptions;
 
 public class NoFireFoundException extends Exception {
   public NoFireFoundException() {

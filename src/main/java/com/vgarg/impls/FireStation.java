@@ -1,6 +1,6 @@
-package main.impls;
+package com.vgarg.impls;
 
-import main.api.CityNode;
+import com.vgarg.api.CityNode;
 
 public class FireStation extends BuildingImpl {
 

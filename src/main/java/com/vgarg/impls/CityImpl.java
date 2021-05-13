@@ -1,13 +1,14 @@
-package main.impls;
+package com.vgarg.impls;
 
-import main.api.Building;
-import main.api.CityNode;
-import main.api.FireDispatch;
-import main.api.exceptions.InvalidDimensionException;
-import main.api.exceptions.OutOfCityBoundsException;
-import main.firefighters.FireDispatchImpl;
+import com.vgarg.api.Building;
+import com.vgarg.api.City;
+import com.vgarg.api.CityNode;
+import com.vgarg.api.FireDispatch;
+import com.vgarg.api.exceptions.InvalidDimensionException;
+import com.vgarg.api.exceptions.OutOfCityBoundsException;
+import com.vgarg.firefighters.FireDispatchImpl;
 
-public class CityImpl implements main.api.City {
+public class CityImpl implements City {
   private final FireStation fireStation;
   private final Building[][] buildingGrid;
   private FireDispatch fireDispatch;

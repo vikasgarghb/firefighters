@@ -1,4 +1,4 @@
-package main.api.exceptions;
+package com.vgarg.api.exceptions;
 
 public class FireproofBuildingException extends Exception {
   public FireproofBuildingException() {
